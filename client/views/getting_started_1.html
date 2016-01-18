@@ -1,0 +1,16 @@
+<template name="getting_started_1">
+    {{>nav_bar}}
+    <div class="container">
+
+        {{#each genres}}
+            <div class="row text-center">
+                {{#each this}}
+                    <div class="col-xs-3 col-md-4 col-sm-4">{{genre}}</div>
+                {{/each}}
+            </div>
+        {{/each}}
+
+        <button class="test">test</button>
+
+    </div>
+</template>

@@ -1,14 +1,5 @@
-/**
- * Created by Rajith Hasith on 14/01/2016.
- */
-var Login = true;
-
-Template.signin_signup.helpers({
-    isLogin: function () {
-        return Login;
-    }
-});
-
+Meteor.subscribe('user_profile');
+Meteor.subscribe('movies')
 
 Template.sign_in_sign_up.events({
     "submit .signup-form": function(e){
@@ -39,17 +30,25 @@ Template.sign_in_sign_up.events({
         }
 
         if(!emailEmp && !passEmp){
-            Meteor.call('addUser',email.value,password.value);
+            Meteor.call('addUser',email.value,password.value,function(err){
+                console.log(err.reason)
+            });
 
-            Meteor.loginWithPassword(email.value,password.value)
-            Router.go('/getting-started');
+            Meteor.loginWithPassword(email.value,password.value,
+                function(err){
+                    if(err){
+                        console.log(err.reason);
+                    }else{
+                        Router.go('/getting-started');
+                    }
+                });
         }
     },
 
     "submit .login-form": function(e){
         console.log("sign in");
         e.preventDefault();
-
+        Meteor.call('test1');
         var email = document.getElementById('login-email');
         var password = document.getElementById('login-password');
         emailEmp = true;
@@ -74,7 +73,14 @@ Template.sign_in_sign_up.events({
         }
 
         if(!emailEmp && !passEmp){
-            Meteor.loginWithPassword(email.value,password.value)
+            Meteor.loginWithPassword(email.value,password.value,
+                function(err){
+                    if(err){
+                        console.log(err.reason);
+                    }else{
+                        Router.go('/');
+                    }
+                });
             //Router.go('/')
         }
     }

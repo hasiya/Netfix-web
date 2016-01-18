@@ -15,14 +15,25 @@ Router.onBeforeAction(function(){
 
 Router.map(function(){
     this.route('/', function(){
-
-        console.log("user in")
-        this.render('home')
-
+        var userProfile = UserProfile.find({userID:Meteor.userId()}).fetch()
+        if(userProfile.getting_Started_Step !== "Done"){
+            Router.go('/getting-started');
+        }else {
+            console.log("user in")
+            this.render('home')
+        }
     });
 
     this.route('/getting-started',function(){
-
-        this.render('getting_started')
+        var userProfile = UserProfile.findOne({userID: Meteor.userId()});
+        switch(userProfile.getting_Started_Step){
+            case "STAGE_1":
+                this.render('getting_started_1')
+                break;
+            case "STAGE_2":
+                break;
+            default:
+                this.render('home');
+        }
     });
 });

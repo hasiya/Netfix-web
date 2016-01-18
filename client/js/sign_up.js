@@ -1,4 +1,4 @@
-Meteor.subscribe('user_profile');
+
 
 //Template.sign_up.events({
 //    'submit form': function(e){
@@ -54,7 +54,3 @@ Meteor.subscribe('user_profile');
 //        Login = true;
 //    },
 //});
-
-Template.sign_up.helpers({
-
-})

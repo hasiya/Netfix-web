@@ -1,0 +1,87 @@
+<component name="libraryTable">
+  <library name="meteor-packages-auto-import-os" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/geojson-utils/6a8799bb15/os/packages/geojson-utils.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/retry/bd5d1c153f/os/packages/retry.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/html-tools/bb980e374f/os/packages/html-tools.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/routepolicy/22d1c79ad6/os/packages/routepolicy.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/autoupdate/83ae7fc8a5/os/packages/autoupdate.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/htmljs/f4a0c2a411/os/packages/htmljs.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/service-configuration/eb47ba3c05/os/packages/service-configuration.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/binary-heap/f8768abc29/os/packages/binary-heap.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/http/4b6d3fdebb/os/packages/http.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/session/eb9fcf4948/os/packages/session.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/blaze/6abc4392e0/os/packages/blaze.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/id-map/d7dfe4daf4/os/packages/id-map.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/sha/8028af8a5d/os/packages/sha.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/spacebars/e6a01917db/os/packages/spacebars.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/blaze-tools/b1d89c7e27/os/packages/blaze-tools.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/jquery/66913f6876/os/packages/jquery.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/spacebars-compiler/aa0aafd01a/os/packages/spacebars-compiler.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/livedata/23a2b54017/os/packages/livedata.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/srp/64d3aca6cf/os/packages/srp.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/ui/a38db31163/os/packages/ui.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/localstorage/34bf656eea/os/packages/localstorage.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/logging/4a1ff80ee5/os/packages/logging.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/underscore/385ecbfa96/os/packages/underscore.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/minifiers/92a4dee3e2/os/packages/minifiers.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/callback-hook/12c36001ad/os/packages/callback-hook.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/webapp/e7a71ea423/os/packages/webapp.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/check/c78ee6b80e/os/packages/check.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/observe-sequence/4f7416acb9/os/packages/observe-sequence.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/ordered-dict/c48e603c58/os/packages/ordered-dict.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/coffeescript/ac8a2e40e2/os/packages/coffeescript.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/deps/31b1a023c3/os/packages/deps.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/random/044885b58f/os/packages/random.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/accounts-base/2005c82891/os/packages/accounts-base.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/ejson/630cb4225c/os/packages/ejson.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-dict/b3069386b6/os/packages/reactive-dict.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/email/a59237d5f0/os/packages/email.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/accounts-password/af3aa668f0/os/packages/accounts-password.js" />
+        <item url="file://$USER_HOME$/AppData/Local/.meteor/packages/reload/996ccdb494/os/packages/reload.js" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/geojson-utils/6a8799bb15/os/packages/geojson-utils.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/retry/bd5d1c153f/os/packages/retry.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/html-tools/bb980e374f/os/packages/html-tools.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/routepolicy/22d1c79ad6/os/packages/routepolicy.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/autoupdate/83ae7fc8a5/os/packages/autoupdate.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/htmljs/f4a0c2a411/os/packages/htmljs.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/service-configuration/eb47ba3c05/os/packages/service-configuration.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/binary-heap/f8768abc29/os/packages/binary-heap.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/http/4b6d3fdebb/os/packages/http.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/session/eb9fcf4948/os/packages/session.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/blaze/6abc4392e0/os/packages/blaze.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/id-map/d7dfe4daf4/os/packages/id-map.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/sha/8028af8a5d/os/packages/sha.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/spacebars/e6a01917db/os/packages/spacebars.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/blaze-tools/b1d89c7e27/os/packages/blaze-tools.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/jquery/66913f6876/os/packages/jquery.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/spacebars-compiler/aa0aafd01a/os/packages/spacebars-compiler.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/livedata/23a2b54017/os/packages/livedata.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/srp/64d3aca6cf/os/packages/srp.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/ui/a38db31163/os/packages/ui.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/localstorage/34bf656eea/os/packages/localstorage.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/logging/4a1ff80ee5/os/packages/logging.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/underscore/385ecbfa96/os/packages/underscore.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/minifiers/92a4dee3e2/os/packages/minifiers.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/callback-hook/12c36001ad/os/packages/callback-hook.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/webapp/e7a71ea423/os/packages/webapp.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/check/c78ee6b80e/os/packages/check.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/observe-sequence/4f7416acb9/os/packages/observe-sequence.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/ordered-dict/c48e603c58/os/packages/ordered-dict.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/coffeescript/ac8a2e40e2/os/packages/coffeescript.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/deps/31b1a023c3/os/packages/deps.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/random/044885b58f/os/packages/random.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/accounts-base/2005c82891/os/packages/accounts-base.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/ejson/630cb4225c/os/packages/ejson.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/reactive-dict/b3069386b6/os/packages/reactive-dict.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/email/a59237d5f0/os/packages/email.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/accounts-password/af3aa668f0/os/packages/accounts-password.js" />
+      <root url="file://$USER_HOME$/AppData/Local/.meteor/packages/reload/996ccdb494/os/packages/reload.js" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

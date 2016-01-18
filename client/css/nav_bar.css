@@ -1,0 +1,47 @@
+body {
+}
+
+.navbar, .dropdown-menu{
+    background: rgba(178, 0, 31, 1);
+    border: none;
+}
+
+.nav>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover, .dropdown-menu>li>a, .dropdown-menu>li{
+    border-bottom: 3px solid transparent;
+}
+.nav>li>a:focus, .nav>li>a:hover,.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+
+    background: #FF3043;
+}
+.navbar a, .dropdown-menu>li>a, .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+    color: #fff;
+}
+.dropdown-menu{
+    -webkit-box-shadow: none;
+    box-shadow:none;
+}
+
+.nav li.active:nth-child(8n+1){
+    border-bottom: #000000 3px solid;
+}
+.nav  li.active:nth-child(8n+2){
+    border-bottom: #000000 3px solid;
+}
+.nav  li.active:nth-child(8n+3){
+    border-bottom: #000000 3px solid;
+}
+.nav li.active:nth-child(8n+4){
+    border-bottom: #000000 3px solid;
+}
+.nav li.active:nth-child(8n+5){
+    border-bottom: #000000 3px solid;
+}
+.nav li.active:nth-child(8n+6){
+    border-bottom: #000000 3px solid;
+}
+.nav li.active:nth-child(8n+7){
+    border-bottom: #000000 3px solid;
+}
+.nav li.active:nth-child(8n+8){
+    border-bottom: #62C2E4 3px solid;
+}
