@@ -2,7 +2,7 @@
  * Created by Rajith Hasith on 07/01/2016.
  */
 
-Router.onBeforeAction(function(){
+Router.onBeforeAction(function () {
     if (!Meteor.userId()) {
         // if the user is not logged in, render the Login template
         this.render('sign_in_sign_up');
@@ -11,24 +11,25 @@ Router.onBeforeAction(function(){
         // from running
         this.next();
     }
-})
+    this.next();
+});
 
-Router.map(function(){
-    this.route('/', function(){
-        var userProfile = UserProfile.find({userID:Meteor.userId()}).fetch()
-        if(userProfile.getting_Started_Step !== "Done"){
-            Router.go('/getting-started');
-        }else {
-            console.log("user in")
+Router.map(function () {
+    this.route('/', function () {
+        var userProfile = UserProfile.findOne({userID: Meteor.userId()});
+        if (userProfile.getting_Started_Step !== "Done") {
+            this.redirect('/getting-started');
+        } else {
+            console.log("user in");
             this.render('home')
         }
     });
 
-    this.route('/getting-started',function(){
+    this.route('/getting-started', function () {
         var userProfile = UserProfile.findOne({userID: Meteor.userId()});
-        switch(userProfile.getting_Started_Step){
+        switch (userProfile.getting_Started_Step) {
             case "STAGE_1":
-                this.render('getting_started_1')
+                this.render('getting_started_1');
                 break;
             case "STAGE_2":
                 break;
