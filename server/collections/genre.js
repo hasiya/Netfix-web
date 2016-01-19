@@ -3,13 +3,13 @@
  */
 
 
-Movies = new Mongo.Collection('movies', {_driver: driver});
+Genre = new Mongo.Collection('genre', {_driver: driver});
 
 /*
  * Allow
  */
 
-Movies.allow({
+Genre.allow({
     insert: function(){
         // Disallow inserts on the client by default.
         return false;
@@ -28,7 +28,7 @@ Movies.allow({
  * Deny
  */
 
-Movies.deny({
+Genre.deny({
     insert: function(){
         // Deny inserts on the client by default.
         return true;
@@ -43,6 +43,6 @@ Movies.deny({
     }
 });
 
-Meteor.publish('movies', function () {
+Meteor.publish('genre', function () {
     return Movies.find();
 });

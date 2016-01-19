@@ -3,7 +3,6 @@
  */
 UserProfile = new Meteor.Collection('user_profile');
 
-
 /*
  * Allow
  */
@@ -40,4 +39,8 @@ UserProfile.deny({
         // Deny removes on the client by default.
         return true;
     }
+});
+
+Meteor.publish('user_profile', function () {
+    return UserProfile.find();
 });

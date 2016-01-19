@@ -1,5 +1,4 @@
-Meteor.subscribe('user_profile');
-Meteor.subscribe('movies')
+
 
 Template.sign_in_sign_up.events({
     "submit .signup-form": function(e){
@@ -11,20 +10,18 @@ Template.sign_in_sign_up.events({
         emailEmp = true;
         passEmp = true;
 
-        if(/\S/.test(email.value)){
-            email.style.background = "transparent"
-            emailEmp = false;
-        }
-        else{
+        if (!/\S/.test(email.value)) {
             email.style.backgroundColor = "#F08080";
             emailEmp = true;
+        } else {
+            email.style.background = "transparent";
+            emailEmp = false;
         }
 
-        if(/\S/.test(password.value)){
-            password.style.background = "transparent"
+        if (/\S/.test(password.value)) {
+            password.style.background = "transparent";
             passEmp = false;
-        }
-        else{
+        } else {
             password.style.backgroundColor = "#F08080";
             passEmp = true;
         }
@@ -48,14 +45,14 @@ Template.sign_in_sign_up.events({
     "submit .login-form": function(e){
         console.log("sign in");
         e.preventDefault();
-        Meteor.call('test1');
+
         var email = document.getElementById('login-email');
         var password = document.getElementById('login-password');
         emailEmp = true;
         passEmp = true;
 
         if(/\S/.test(email.value)){
-            email.style.background = "transparent"
+            email.style.background = "transparent";
             emailEmp = false;
         }
         else{
@@ -64,7 +61,7 @@ Template.sign_in_sign_up.events({
         }
 
         if(/\S/.test(password.value)){
-            password.style.background = "transparent"
+            password.style.background = "transparent";
             passEmp = false;
         }
         else{
