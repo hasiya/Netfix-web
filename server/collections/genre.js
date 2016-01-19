@@ -44,5 +44,5 @@ Genre.deny({
 });
 
 Meteor.publish('genre', function () {
-    return Movies.find();
+    return Genre.find();
 });

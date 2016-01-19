@@ -3,5 +3,14 @@
  */
 
 Meteor.methods({
-
+    addG:function(genres){
+        var i = 1;
+        genres.forEach(function(elem){
+            Genre.insert({
+                id:i,
+                genre:elem.genre
+            });
+            i++
+        })
+    }
 });

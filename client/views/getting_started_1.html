@@ -2,12 +2,16 @@
     {{>nav_bar}}
     <div class="container">
 
-        {{#each genres}}
+        {{#each getGenre}}
             <div class="row text-center">
-                {{#each this}}
-                    <div class="col-xs-3 col-md-4 col-sm-4">{{genre}}</div>
+                {{#each row}}
+
+                    <div class="col-xs-4 col-md-4 col-sm-4">
+                        <button type="button" class="btn btn-default genre_btn" data-checked="false" style="width: 120px">{{genre}}</button>
+                    </div>
                 {{/each}}
             </div>
+            <br>
         {{/each}}
 
         <button class="test">test</button>
