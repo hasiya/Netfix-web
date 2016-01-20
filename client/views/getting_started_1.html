@@ -1,20 +1,29 @@
 <template name="getting_started_1">
     {{>nav_bar}}
     <div class="container">
-
+        <h3>Please Select 5 Categories You Like...</h3>
+        <br>
         {{#each getGenre}}
             <div class="row text-center">
                 {{#each row}}
 
                     <div class="col-xs-4 col-md-4 col-sm-4">
-                        <button type="button" class="btn btn-default genre_btn" data-checked="false" style="width: 120px">{{genre}}</button>
+                        <button type="button" class="btn btn-default genre_btn" value="{{id}}" data-checked="false"
+                                style="width: 120px">{{genre}}</button>
                     </div>
                 {{/each}}
             </div>
             <br>
         {{/each}}
-
-        <button class="test">test</button>
+        {{#if showDone}}
+            <button type="button" class="btn btn-default genre_btn pull-right done_btn" id="DoneBtn"
+                    data-checked="false" style="width: 120px">Done <i
+                    class="glyphicon glyphicon-ok"></i></button>
+        {{else}}
+            <button type="button" class="btn btn-default genre_btn pull-right skip_btn" id="SkipBtn"
+                    data-checked="false" style="width: 120px">skip <i
+                    class="glyphicon glyphicon-triangle-right"></i></button>
+        {{/if}}
 
     </div>
 </template>

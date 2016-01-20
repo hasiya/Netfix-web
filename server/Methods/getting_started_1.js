@@ -3,14 +3,22 @@
  */
 
 Meteor.methods({
-    addG:function(genres){
-        var i = 1;
-        genres.forEach(function(elem){
-            Genre.insert({
-                id:i,
-                genre:elem.genre
+    addGenre: function (id) {
+        UserProfile.update({
+            userID:Meteor.userId()},
+            {
+                $addToSet:{
+                    likeGenre:{$each:id}
+                }
             });
-            i++
-        })
+    },
+
+    removeGenre:function(id){
+        UserProfile.update({
+            userID:Meteor.userId()},
+            {
+                $pull:{likeGenre:id}
+            });
     }
+
 });
