@@ -7,8 +7,8 @@ Meteor.methods({
         UserProfile.update({
             userID:Meteor.userId()},
             {
-                $addToSet:{
-                    likeGenre:{$each:id}
+                $set:{
+                    likeGenre:id
                 }
             });
     },
@@ -19,6 +19,13 @@ Meteor.methods({
             {
                 $pull:{likeGenre:id}
             });
+    },
+    gettingStartedDone: function () {
+        UserProfile.update({
+            userID: Meteor.userId()},
+            {
+                $set:{getting_Started_Step:"Done"}
+        });
     }
 
 });

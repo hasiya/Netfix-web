@@ -33,8 +33,8 @@ Router.map(function () {
                 break;
             case "STAGE_2":
                 break;
-            default:
-                this.render('home');
+            case "Done":
+                this.redirect('/');
         }
     });
 });

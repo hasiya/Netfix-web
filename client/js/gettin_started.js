@@ -18,9 +18,8 @@ Template.getting_started_1.helpers({
         _deps.depend();
         return isDone;
     }
-
-
 });
+
 var likeGenre = [];
 Template.getting_started_1.events({
     "click .genre_btn":function(e){
@@ -52,6 +51,17 @@ Template.getting_started_1.events({
     },
 
     "click .done_btn":function(e){
+        e.preventDefault();
+        Meteor.call('addGenre', likeGenre);
+        likeGenre = []
+        isDone = false;
+        Meteor.call('gettingStartedDone');
+        Router.go('/');
 
+    },
+    "click .skip_btn":function(e){
+        e.preventDefault();
+        Meteor.call('gettingStartedDone');
+        Router.go('/');
     }
 });
