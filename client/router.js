@@ -37,4 +37,7 @@ Router.map(function () {
                 this.redirect('/');
         }
     });
+    this.route('/video', function(){
+        this.render('video')
+    });
 });

@@ -1,0 +1,12 @@
+<template name="video">
+    <!--<video id="my_video_1" class="video-js vjs-default-skin" width="640px" height="267px"-->
+           <!--controls preload="none" >-->
+        <!--data-setup='{ "aspectRatio":"640:267", "playbackRates": [1, 1.5, 2] }'>-->
+        <!--<source src="rtmp://40.122.164.203:1935/vod2/JT_My_Love.mp4" type='rtmp/mp4' />-->
+    <!--</video>-->
+
+    <video id="my-video" class="video-js" controls preload="auto" width="640" height="264" data-setup="{aspectRatio:640:267, playbackRates: [1, 1.5, 2] }">
+        <source src="rtmp://40.122.164.203:1935/vod2/JT_My_Love.mp4" type='rtmp/mp4' />
+
+    </video>
+</template>
