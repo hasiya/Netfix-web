@@ -15,12 +15,14 @@ Template.video.rendered = function(){
     );*!/
 };*/
 
-
+var server1 = "rtmp://40.122.164.203:1935/vod2/";
 Template.video.onRendered(function(){
     this.autorun(function() {
+        var id = Router.current().params._id;
+        var movie = Movies.findOne({_id:id});
         if (JWPlayer.loaded()) {
             jwplayer('playa').setup({
-                file: 'rtmp://40.122.164.203:1935/vod2/JT_My_Love.mp4',
+                file: server1+movie.videoName,
                 width:'100%',
                 autostart: true
             });

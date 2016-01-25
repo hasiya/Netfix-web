@@ -44,10 +44,14 @@ Router.map(function () {
         }
     });
     this.route('video', {
-        path: '/video',
+        path: '/video/:_id',
         onBeforeAction: function () {
             JWPlayer.load('PhODe7sh');
             this.next();
+        },
+        data: function () {
+            var a = Movies.findOne({_id: this.params._id});
+            return a
         }
     });
 });

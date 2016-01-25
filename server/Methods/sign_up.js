@@ -16,12 +16,22 @@ Meteor.methods({
 
         });
     },
-    test1:function(){
+    test1:function(_id,title,runTime,genre,releaseDate,about,director,addedDate,videoServer,videoName,posterName){
+       // var id = CryptoJS.MD5(guuid()).toString();
         Movies.insert({
-            name:"bla",
-            test:123345356
-        });
-    },
+            _id:_id,
+            title:title,
+            runTime:runTime,
+            genre:genre,
+            releaseDate:releaseDate,
+            about: about,
+            director: director,
+            addedDate: addedDate,
+            videoServer:videoServer,
+            videoName:videoName,
+            posterName:posterName
+        })
+    }
 
 
 });
