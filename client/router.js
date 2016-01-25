@@ -12,7 +12,13 @@ Router.onBeforeAction(function () {
         this.next();
     }
     this.next();
+
 });
+
+//Router.onBeforeAction(function() {
+//    JWPlayer.load('PhODe7sh');
+//    this.next();
+//}, { only: ['/video'] });
 
 Router.map(function () {
     this.route('/', function () {
@@ -37,7 +43,11 @@ Router.map(function () {
                 this.redirect('/');
         }
     });
-    this.route('/video', function(){
-        this.render('video')
+    this.route('video', {
+        path: '/video',
+        onBeforeAction: function () {
+            JWPlayer.load('PhODe7sh');
+            this.next();
+        }
     });
 });
