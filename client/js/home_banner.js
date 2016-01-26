@@ -5,7 +5,7 @@
 
 Template.banner.helpers({
     getLatest:function(){
-        var movies = Movies.find({},{sort:{addedDate:-1},limit:5});
+        var movies = Movies.find({},{sort:{addedDate:-1}});
         //var returnObject=[];
         //movies.forEach(function(element,index,array){
         //    returnObject.push({

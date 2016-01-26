@@ -87,7 +87,7 @@ var a =
             addedDate: new Date(),
             videoServer:1,
             videoName:"Pulp_Fiction.mp4",
-            posterName:"Pulp Fiction.jpg"
+            posterName:"Pulp_Fiction.jpg"
         }},
 
         {movies:{
@@ -171,16 +171,8 @@ var a =
 
 
 Template.nav_bar.events({
-    //"click .test":function(){
-    //    a.forEach(function(value,index,ar){
-    //        var movie = value.movies;
-    //        var id = uuid.new();
-    //        Meteor.call("test1",id,movie.title,movie.runTime,movie.genre,
-    //            movie.releaseDate,movie.about,movie.director,movie.addedDate,
-    //            movie.videoServer,movie.videoName,movie.posterName);
-    //    });
-    //
-    //
-    //    //Meteor.call("test1");
-    //}
+    "click .sign_out":function(e){
+        e.preventDefault();
+        Meteor.logout();
+    }
 });

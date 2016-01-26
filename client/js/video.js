@@ -31,4 +31,16 @@ Template.video.onRendered(function(){
     //var player = videojs('video1');
     //player.enterFullWindow();
     //var s = 1;
+});
+
+Template.video.helpers({
+    getGen: function(genres){
+        var gens = [];
+        genres.forEach(function(element,index,array){
+            var gen = Genre.findOne({id:element}).genre;
+            gens.push(gen);
+
+        });
+        return gens
+    }
 })
