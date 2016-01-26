@@ -20,3 +20,6 @@ iron:router
 twbs:bootstrap
 accounts-password
 mizzao:autocomplete
+jeremy:jwplayer
+jparker:crypto-base64
+rwatts:uuid

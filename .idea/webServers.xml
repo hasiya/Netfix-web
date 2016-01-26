@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4440be04-ea1a-452a-b4bb-bbc198089fb2" name="digital" url="http://178.62.45.202">
+        <fileTransfer host="178.62.45.202" port="22" privateKey="D:\OneDrive\University\Marsters\Devops\video.ppk" accessType="SFTP" username="root" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
