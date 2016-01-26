@@ -41,7 +41,6 @@ Movies.deny({
         // Deny removes on the client by default.
         return true;
     }
-});
 
 Meteor.publish('movies', function () {
     return Movies.find();
